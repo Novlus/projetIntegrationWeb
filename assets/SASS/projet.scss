@@ -1,0 +1,45 @@
+@import '_grid.scss';
+
+$gutter : 1.6%;
+$TotalNBColumns : 6;
+
+.col + .col
+    {
+        margin-left: $gutter;
+    }
+
+.row
+    {
+        @include row();
+    }
+
+    // generate automaticaly .off1 .off2 ... off20  while .off is inferior as $TotalNBColumns
+    @for $i from 1 through $TotalNBColumns
+    {
+        .off#{$i}
+        {
+            @include offset($i,$TotalNBColumns);
+        }
+    }
+
+    @for $i from 1 through $TotalNBColumns
+    {
+        .s#{$i}
+        {
+            @include grid();
+            @include dimension($i,$TotalNBColumns);
+        }
+    }
+
+    @media screen and (min-width: 601px)
+{
+    @for $i from 1 through $TotalNBColumns
+    {
+        .m#{$i}
+        {
+            @include grid();
+            @include dimension($i,$TotalNBColumns);
+        }
+    }
+
+}
