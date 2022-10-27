@@ -1,59 +1,303 @@
-@import '_grid.scss';
+@import 'grid.scss';
 
-$gutter : 1.6%;
-$TotalNBColumns : 6;
+$gutter : 3%;
+$TotalNBColumnsEl : 6;//1200px
+$TotalNBColumnsL : 5;//992px
+$TotalNBColumnsM : 4;//750px
+$TotalNBColumnsS : 3;//>550px
+$TotalNBColumnsXs : 2;//<450px
+$BorderWidth : 1px;
+$BorderStyle : outset;
+
+
+html
+{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'LondrinaSolid-Black';
+    src: url('../Police/LondrinaSolid-Black.ttf') format('truetype');
+}
+header
+{
+    border-width: $BorderWidth;
+    border-style: $BorderStyle;
+    width: 98%;
+    figure
+    {
+        position: relative;
+        margin: 0;
+        width: 10%;
+        .logo{
+            margin: 0;
+            width : 3rem;
+            height : 3rem;
+        }
+    }
+    h1
+    {    font-family: 'LondrinaSolid-Black';
+         position : absolute;
+        top : -1%;
+        margin-left: 3rem;
+        font-size : 2rem;
+        max-width: 100%;
+    }
+    div
+    {
+        width:18%;
+        position: relative;
+        left : 82%
+    }
+    p
+    {
+        color:gray
+    }
+}
+
+/*.div-nav
+{
+    order: 2;
+}
+
+.div-amp
+{
+    order: 1;
+}*/
+
+
+.image
+{
+    width: 100%;
+}
+
+.trait-noir
+{
+    width: 10%;
+    height: 6px;
+    background-color: black;
+}
+
+#div-nav
+{
+    border-style: none;
+    
+}
+nav a
+{
+    text-decoration: none;
+    color: orange;
+}
+
+nav ul 
+{
+    list-style: none;
+    color: orange;
+}
+
+nav h2
+{
+    color: orange;
+    font-family: 'LondrinaSolid-Black';
+}
+
+.col
+{
+    margin-bottom: 50px;
+}
+
+div:nth-child(even)
+{
+    transform: rotate(359deg);
+}
+
+div:nth-child(odd)
+{
+    transform: rotate(1deg);
+}
+
+.ul-info
+{
+    list-style-type: none;
+    padding: 0;
+     margin: 0;
+
+}
+
+.li-author
+{
+    background-image: url('../Images/avatar2.png');
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 3px 0 3px 20px;
+    margin: .4em 0;
+    
+}
+
+.li-date
+{
+    background-image: url('../Images/calendar2.png');
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 3px 0 3px 20px;
+    margin: .4em 0;
+}
+
+h4
+{
+    font-family: 'LondrinaSolid-Black';
+    color: orange;
+}
+
+figcaption
+{   
+    position: relative;
+    font-family: 'LondrinaSolid-Black';
+    color: lightgray;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0;
+    top: 10%;
+
+
+}
 
 .col + .col
     {
         margin-left: $gutter;
     }
 
-.row
+.rowXs
     {
-        @include row();
+        @include rowXs();
     }
 
     // generate automaticaly .off1 .off2 ... off20  while .off is inferior as $TotalNBColumns
-    @for $i from 1 through $TotalNBColumns
+    @for $i from 1 through $TotalNBColumnsXs
     {
         .off#{$i}
         {
-            @include offset($i,$TotalNBColumns);
+            @include offset($i,$TotalNBColumnsXs);
         }
     }
 
-    @for $i from 1 through $TotalNBColumns
+    @for $i from 1 through $TotalNBColumnsXs
     {
-        .s#{$i}
+        .xs#{$i}
         {
             @include grid();
-            @include dimension($i,$TotalNBColumns);
+            @include dimension($i,$TotalNBColumnsXs);
+            border-width: $BorderWidth;
+            border-style: $BorderStyle;
         }
     }
 
-    @media screen and (min-width: 601px)
-{
-    @for $i from 1 through $TotalNBColumns
+    @media screen and (min-width: 451px)
     {
-        .m#{$i}
+
+        @for $i from 1 through $TotalNBColumnsS
         {
-            @include grid();
-            @include dimension($i,$TotalNBColumns);
+            .off#{$i}
+            {
+                @include offset($i,$TotalNBColumnsS);
+            }
         }
+
+        @for $i from 1 through $TotalNBColumnsS
+        {
+            .s#{$i}
+            {
+                @include grid();
+                @include dimension($i,$TotalNBColumnsS);
+            }
+        }
+
     }
 
-}
+    @media screen and (min-width: 551px)
+    {
+
+        @for $i from 1 through $TotalNBColumnsM
+        {
+            .off#{$i}
+            {
+                @include offset($i,$TotalNBColumnsM);
+            }
+        }
+
+        @for $i from 1 through $TotalNBColumnsM
+        {
+            .m#{$i}
+            {
+                @include grid();
+                @include dimension($i,$TotalNBColumnsM);
+            }
+        }
+
+    }
 
 
-h4 {
-    color: orange;
-}
+    @media screen and (min-width: 751px)
+    {
 
-.article {
-    box-shadow: 5px 5px 10px 2px grey;
-    margin: 10px;
-}
+        @for $i from 1 through $TotalNBColumnsL
+        {
+            .off#{$i}
+            {
+                @include offset($i,$TotalNBColumnsL);
+            }
+        }
 
-.head>img {
-    height: 10%;
-}
+        @for $i from 1 through $TotalNBColumnsL
+        {
+            .l#{$i}
+            {
+                @include grid();
+                @include dimension($i,$TotalNBColumnsL);
+            }
+        }
+
+    }
+
+
+    @media screen and (min-width: 991px)
+    {
+
+        @for $i from 1 through $TotalNBColumnsEl
+        {
+            .off#{$i}
+            {
+                @include offset($i,$TotalNBColumnsEl);
+            }
+        }
+
+        @for $i from 1 through $TotalNBColumnsEl
+        {
+            .el#{$i}
+            {
+                @include grid();
+                @include dimension($i,$TotalNBColumnsEl);
+            }
+        }
+
+    
+
+    /*.rowEl
+    {
+        @include rowEl();
+
+
+    }*/
+
+    /*.rowXs
+    {
+        @include annuleRow();
+    }*/
+
+    
+
+    }
+
+   
