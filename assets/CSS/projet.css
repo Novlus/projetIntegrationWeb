@@ -111,4 +111,18 @@
     justify-content: flex-start;
     flex-basis: 100%;
   }
-}/*# sourceMappingURL=projet.css.map */
+}
+h4 {
+  color: orange;
+}
+
+.article {
+  box-shadow: 5px 5px 10px 2px grey;
+  margin: 10px;
+}
+
+.head > img {
+  height: 10%;
+}
+
+/*# sourceMappingURL=projet.css.map */
