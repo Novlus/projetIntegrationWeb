@@ -5,25 +5,36 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/CSS/stylesheet.css">
+    <link rel="stylesheet" href="assets/SCSS/projet.css">
 
 </head>
 
 <body>
     <header>
+        <figure>
+            <img class="logo" src="assets/Images/logo.svg" alt="logo"> 
+        </figure>
         <h1>
-            <figure  class="logo">
-                <img src="assets/Images/logo.svg" alt="logo"> 
-            </figure>
             web dev notes
         </h1>
 
         <p>
             Web developer. backend + Frontend. Learning about designing user interfaces, improvement of user experience and its implementation.
         </p>
+        <div>
+            <img class="img" src="assets/Images/discord2.png" alt="icon">
+            <img class="img" src="assets/Images/linkedin2.png" alt="icon">
+            <img class="img" src="assets/Images/github2.png" alt="icon">
+            <img class="img" src="assets/Images/codepen2.png" alt="icon">
+            <img class="img" src="assets/Images/stackoverflow2.png" alt="icon">
+            <img class="img" src="assets/Images/twitter2.png" alt="icon">
+            <img class="img" src="assets/Images/mail2.png" alt="icon">
+        </div>
     </header>
-    <div>
+        <div class="rowXs">
+        <div class="col xs2" id="div-nav">
         <nav>
+            <h2> Navigation</h2>
             <ul>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Categories</a></li>
@@ -32,7 +43,7 @@
                 <li>App development</li>
                 <li>Blogging</li>
                 <li>Design resources</li></ul>
-                <li><a href="#">Authors</a></li>
+                <li class="li-author"><a href="#">Authors</a></li>
                 <ul><li>Lissa Doniro</li>
                 <li>Michael Kordvani</li>
                 <li>jmtalarn</li></ul>
@@ -40,13 +51,17 @@
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
-
-        <div >
+        </div>
+        </div>
+        <div class="rowXs">
+        <div class="col xs2">
             <figure>
-                <img src="assets/Images/activate-google-amp.png" alt="AMP" >
+                <figcaption>GUEST POST, WEB DEVELOPMENT</figcaption>
+                <img class="image" src="assets/Images/activate-google-amp.png" alt="AMP" >
             </figure>
             <h4>How to activate Google's AMP and what they are</h4>
-            <ul>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> Lissa Doniro</li>
                 <li class="li-date"> Invalid Date</li>
             </ul>
@@ -58,13 +73,17 @@
                Sed luctus magna eu diam fringilla, ac pulvinar nulla aliquam. Sed ex sem, maximus sit amet quam et, blandit fermentum velit. In hac habitasse platea dictumst. 
             </p>
         </div>
+        </div>
 
-        <div>
-            <figure class="image">
-                <img src="assets/Images/be-delivery-driver.jpg" alt="image">
+        <div class="rowXs">
+        <div class="col xs2">
+            <figure>
+                <figcaption>GUEST POST</figcaption>
+                <img class="image" src="assets/Images/be-delivery-driver.jpg" alt="image">
             </figure>
             <h4>Tough time finding a job? Consider being a delivery drive</h4>
-            <ul>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> Michael Kordvani</li>
                 <li class="li-date"> Invalid Date</li>
             </ul>
@@ -76,13 +95,18 @@
                 Sed luctus magna eu diam fringilla, ac pulvinar nulla aliquam. Sed ex sem, maximus sit amet quam et, blandit fermentum velit. In hac habitasse platea dictumst. 
              </p>
         </div>
+        </div>
 
-        <div>
-            <figure class="image">
-                <img src="assets/Images/drake-no-js-drake-yes-ts.png" alt="image">
+
+        <div class="rowXs">
+        <div class="col xs2">
+            <figure>
+                <figcaption>WEB DEVELOPMENT</figcaption>
+                <img class="image" src="assets/Images/reactjs-passdata.jpg" alt="image">
             </figure>
-            <h4>3 Must have tools for javascript app development programmers who do not love javascript</h4>
-            <ul>
+            <h4>3 React quick overview and nested components</h4>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> Michael Kordvani</li>
                 <li class="li-date"> 02/12/2017 à 21:45:53</li>
             </ul>
@@ -95,13 +119,17 @@
              </p>
             
         </div>
-
-        <div>
-            <figure class="image">
-                <img src="assets/Images/reactjs-passdata.jpg" alt="image">
+        </div>
+    
+        <div class="rowXs">
+        <div class="col xs1">
+            <figure>
+                <figcaption>GUEST POST, WEB DEVELOPMENT</figcaption>
+                <img class="image" src="assets/Images/drake-no-js-drake-yes-ts.png" alt="image">
             </figure>
-            <h4>React quick overview and nested components</h4>
-            <ul>
+            <h4>3 Must have tools for javascript app development programmers who do not love javascript</h4>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> jmtalarn</li>
                 <li class="li-date"> Invalid Date</li>
             </ul>
@@ -113,13 +141,15 @@
                 Sed luctus magna eu diam fringilla, ac pulvinar nulla aliquam. Sed ex sem, maximus sit amet quam et, blandit fermentum velit. In hac habitasse platea dictumst. 
              </p>
         </div>
-
-        <div>
-            <figure class="image">
-                <img src="assets/Images/build-publish-ionic-app.png" alt="image">
+        
+        <div class="col xs1">
+            <figure >
+                <figcaption>WEB DEVELOPMENT</figcaption>
+                <img class="image" src="assets/Images/build-publish-ionic-app.png" alt="image">
             </figure>
             <h4>Build and publish a ionic app</h4>
-            <ul>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> jmtalarn</li>
                 <li class="li-date"> 16/10/2017 à 05:45:53</li>
             </ul>
@@ -131,14 +161,17 @@
                 Sed luctus magna eu diam fringilla, ac pulvinar nulla aliquam. Sed ex sem, maximus sit amet quam et, blandit fermentum velit. In hac habitasse platea dictumst. 
              </p>
         </div>
+        </div>
 
-
-        <div>
-            <figure class="image">
-                <img src="assets/Images/splash.jpg" alt="image">
+        <div class="rowXs">
+        <div class="col xs1">
+            <figure>
+                <h4>Build and publish a ionic app</h4>
+                <img class="image" src="assets/Images/splash.jpg" alt="image">
             </figure>
             <h4>Build and publish a ionic app-generate icon and splash images</h4>
-            <ul>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> jmtalarn</li>
                 <li class="li-date"> 07/10/2017 à 02:32:34</li>
             </ul>
@@ -150,13 +183,16 @@
                 Sed luctus magna eu diam fringilla, ac pulvinar nulla aliquam. Sed ex sem, maximus sit amet quam et, blandit fermentum velit. In hac habitasse platea dictumst. 
              </p>
         </div>
+        </div>
 
-        <div>
-            <figure class="image">
-                <img src="assets/Images/wordpress-jekyll.png" alt="image">
+        <div class="rowXs">
+        <div class="col xs2">
+            <figure>
+                <img class="image" src="assets/Images/wordpress-jekyll.png" alt="image">
             </figure>
             <h4>Migrate a blog from wordpress to jekyll</h4>
-            <ul>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> jmtalarn</li>
                 <li class="li-date"> 22/09/2017 à 23:38:28</li>
             </ul>
@@ -168,13 +204,16 @@
                 Sed luctus magna eu diam fringilla, ac pulvinar nulla aliquam. Sed ex sem, maximus sit amet quam et, blandit fermentum velit. In hac habitasse platea dictumst. 
              </p>
         </div>
+        </div>
 
-        <div>
-            <figure class="image">
-                <img src="assets/Images/live_update.jpg" alt="image">
+        <div class="rowXs">
+        <div class="col xs2">
+            <figure>
+                <img class="image" src="assets/Images/live_update.jpg" alt="image">
             </figure>
             <h4>Build and publish a ionic app-live update of firebase backend with angularjs</h4>
-            <ul>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> jmtalarn</li>
                 <li class="li-date"> 18/08/2017 à 14:28:28</li>
             </ul>
@@ -186,13 +225,16 @@
                 Sed luctus magna eu diam fringilla, ac pulvinar nulla aliquam. Sed ex sem, maximus sit amet quam et, blandit fermentum velit. In hac habitasse platea dictumst. 
              </p>
         </div>
+        </div>
 
-        <div>
-            <figure class="image">
-                <img src="assets/Images/Cordova_Alaska_aerial_view.jpg" alt="image">
+        <div class="rowXs">
+        <div class="col xs2">
+            <figure>
+                <img class="image" src="assets/Images/Cordova_Alaska_aerial_view.jpg" alt="image">
             </figure>
             <h4>Build and publish a ionic app-cordova plugins</h4>
-            <ul>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> jmtalarn</li>
                 <li class="li-date"> 11/08/2017 à 18:49:17</li>
             </ul>
@@ -204,13 +246,16 @@
                 Sed luctus magna eu diam fringilla, ac pulvinar nulla aliquam. Sed ex sem, maximus sit amet quam et, blandit fermentum velit. In hac habitasse platea dictumst. 
              </p>
         </div>
+        </div>
 
-        <div>
-            <figure class="image">
-                <img src="assets/Images/stuttgart-1598427_1920.jpg" alt="image">
+        <div class="rowXs">
+        <div class="col xs2">
+            <figure>
+                <img class="image" src="assets/Images/stuttgart-1598427_1920.jpg" alt="image">
             </figure>
             <h4>Free practical courses to learn about modern web development</h4>
-            <ul>
+            <div class="trait-noir"></div>
+            <ul class="ul-info">
                 <li class="li-author"> jmtalarn</li>
                 <li class="li-date"> 04/08/2017 à 18:35:45</li>
             </ul>
@@ -222,8 +267,8 @@
                 Sed luctus magna eu diam fringilla, ac pulvinar nulla aliquam. Sed ex sem, maximus sit amet quam et, blandit fermentum velit. In hac habitasse platea dictumst. 
              </p>
         </div>
+        </div>
 
-    </div>
         <button>Go to Next Page</button>
     
 

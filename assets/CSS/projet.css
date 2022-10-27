@@ -1,0 +1,358 @@
+/*@mixin rowS ()
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media screen and (min-width: 551px)
+    {
+        display: initial;
+        flex-direction: initial;
+        flex-wrap: initial;
+    }
+} 
+
+@mixin rowM ()
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media screen and (min-width: 751px)
+    {
+        display: initial;
+        flex-direction: initial;
+        flex-wrap: initial;
+    }
+} 
+
+@mixin rowL ()
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media screen and (min-width: 991px)
+    {
+        display: initial;
+        flex-direction: initial;
+        flex-wrap: initial;
+    }
+} 
+
+@mixin rowEl ()
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}*/
+html {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'LondrinaSolid-Black';
+  src: url("../Police/LondrinaSolid-Black.ttf") format("truetype"); }
+header {
+  border-width: 1px;
+  border-style: outset;
+  width: 98%; }
+  header figure {
+    position: relative;
+    margin: 0;
+    width: 10%; }
+    header figure .logo {
+      margin: 0;
+      width: 3rem;
+      height: 3rem; }
+  header h1 {
+    font-family: 'LondrinaSolid-Black';
+    position: absolute;
+    top: -1%;
+    margin-left: 3rem;
+    font-size: 2rem;
+    max-width: 100%; }
+  header div {
+    width: 18%;
+    position: relative;
+    left: 82%; }
+  header p {
+    color: gray; }
+
+/*.div-nav
+{
+    order: 2;
+}
+
+.div-amp
+{
+    order: 1;
+}*/
+.image {
+  width: 100%; }
+
+.trait-noir {
+  width: 10%;
+  height: 6px;
+  background-color: black; }
+
+#div-nav {
+  border-style: none; }
+
+nav a {
+  text-decoration: none;
+  color: orange; }
+
+nav ul {
+  list-style: none;
+  color: orange; }
+
+nav h2 {
+  color: orange;
+  font-family: 'LondrinaSolid-Black'; }
+
+.col {
+  margin-bottom: 50px; }
+
+div:nth-child(even) {
+  transform: rotate(359deg); }
+
+div:nth-child(odd) {
+  transform: rotate(1deg); }
+
+.ul-info {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.li-author {
+  background-image: url("../Images/avatar2.png");
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 3px 0 3px 20px;
+  margin: .4em 0; }
+
+.li-date {
+  background-image: url("../Images/calendar2.png");
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 3px 0 3px 20px;
+  margin: .4em 0; }
+
+h4 {
+  font-family: 'LondrinaSolid-Black';
+  color: orange; }
+
+figcaption {
+  position: relative;
+  font-family: 'LondrinaSolid-Black';
+  color: lightgray;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0;
+  top: 10%; }
+
+.col + .col {
+  margin-left: 3%; }
+
+.rowXs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.off1 {
+  margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+.off2 {
+  margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+.xs1 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1));
+  border-width: 1px;
+  border-style: outset; }
+
+.xs2 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1));
+  border-width: 1px;
+  border-style: outset; }
+
+@media screen and (min-width: 451px) {
+  .off1 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off2 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off3 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .s1 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .s2 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .s3 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); } }
+@media screen and (min-width: 551px) {
+  .off1 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off2 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off3 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off4 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .m1 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .m2 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .m3 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .m4 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); } }
+@media screen and (min-width: 751px) {
+  .off1 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off2 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off3 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off4 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off5 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .l1 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .l2 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .l3 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .l4 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .l5 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); } }
+@media screen and (min-width: 991px) {
+  .off1 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off2 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off3 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off4 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off5 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .off6 {
+    margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns)); }
+
+  .el1 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .el2 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .el3 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .el4 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .el5 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+  .el6 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1)); }
+
+    /*.rowEl
+    {
+        @include rowEl();
+
+
+    }*/
+  /*.rowXs
+  {
+      @include annuleRow();
+  }*/ }
+
+/*# sourceMappingURL=projet.css.map */
