@@ -54,8 +54,6 @@
     flex-wrap: wrap;
 }*/
 
-
-
 @mixin grid()
 {
     flex-grow: 0;
@@ -67,7 +65,6 @@
 @mixin dimension($WidthNBColumns,$TotalNBColumns)
 {
     $one-column-width: calc( (98% - 2 * ($BorderWidth) - ( ($TotalNBColumns - 1) * $gutter ) )/$TotalNBColumns );
-
     flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1));
 
 }
@@ -75,7 +72,6 @@
 @mixin offset($WidthNBColumns,$TotalNBColumns)
 {
     $one-column-width: calc( (98% - 2 * ($BorderWidth) - ( ($TotalNBColumns - 1) * $gutter ) )/$TotalNBColumns );
-
     margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns));
 
 }
