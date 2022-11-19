@@ -1,11 +1,10 @@
 //@import 'variable.scss'; 
 
-@mixin rowXs ()
-{
+@mixin row () {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-} 
+}
 
 
 /*@mixin rowS ()
@@ -54,24 +53,21 @@
     flex-wrap: wrap;
 }*/
 
-@mixin grid()
-{
+@mixin grid() {
     flex-grow: 0;
     flex-shrink: 0;
     justify-content: flex-start;
 
 }
 
-@mixin dimension($WidthNBColumns,$TotalNBColumns)
-{
-    $one-column-width: calc( (98% - 2 * ($BorderWidth) - ( ($TotalNBColumns - 1) * $gutter ) )/$TotalNBColumns );
+@mixin dimension($WidthNBColumns, $TotalNBColumns) {
+    $one-column-width: calc((90% - 2 * ($BorderWidth) - (($TotalNBColumns - 1) * $gutter ))/$TotalNBColumns );
     flex-basis: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns - 1));
 
 }
 
-@mixin offset($WidthNBColumns,$TotalNBColumns)
-{
-    $one-column-width: calc( (98% - 2 * ($BorderWidth) - ( ($TotalNBColumns - 1) * $gutter ) )/$TotalNBColumns );
+@mixin offset($WidthNBColumns, $TotalNBColumns) {
+    $one-column-width: calc((90% - 2 * ($BorderWidth) - (($TotalNBColumns - 1) * $gutter ))/$TotalNBColumns );
     margin-left: calc($one-column-width * $WidthNBColumns + $gutter * ($WidthNBColumns));
 
 }
