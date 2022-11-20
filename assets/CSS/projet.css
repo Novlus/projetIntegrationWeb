@@ -53,6 +53,10 @@ html {
   padding: 0;
 }
 
+body {
+  margin-bottom: 5%;
+}
+
 @font-face {
   font-family: "LondrinaSolid-Black";
   src: url("../Police/LondrinaSolid-Black.ttf") format("truetype");
@@ -79,8 +83,6 @@ html {
 }
 
 #div-webDev {
-  border-width: 1px;
-  border-style: outset;
   height: 70px;
   position: absolute;
   top: 1150px;
@@ -99,8 +101,7 @@ html {
 }
 
 header {
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
   width: 98%;
 }
 header h1 {
@@ -151,6 +152,7 @@ div p {
 
 #div-nav {
   border-style: none;
+  box-shadow: none;
 }
 
 nav a {
@@ -198,6 +200,7 @@ div figure {
   background-position: 0 50%;
   padding: 3px 0 3px 20px;
   margin: 0.4em 0;
+  text-decoration: underline;
 }
 
 .li-date {
@@ -209,24 +212,54 @@ div figure {
   margin: 0.4em 0;
 }
 
+.li-loupe {
+  background-image: url("../Images/loupe2.png");
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 3px 0 3px 20px;
+  margin: 0.4em 0;
+}
+
+.li-categorie {
+  background-image: url("../Images/categorie2.png");
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 3px 0 3px 20px;
+  margin: 0.4em 0;
+}
+
+.li-author2 {
+  background-image: url("../Images/author4.png");
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 3px 0 3px 20px;
+  margin: 0.4em 0;
+}
+
+.li-about {
+  background-image: url("../Images/about2.png");
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 3px 0 3px 20px;
+  margin: 0.4em 0;
+}
+
+.li-postIt {
+  background-image: url("../Images/postIt2.png");
+  image-rendering: auto;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding: 3px 0 3px 20px;
+  margin: 0.4em 0;
+}
+
 h4 {
   font-family: "LondrinaSolid-Black";
   color: orange;
-}
-
-figcaption {
-  position: relative;
-  font-family: "LondrinaSolid-Black";
-  color: lightgray;
-  font-weight: bold;
-  font-size: 0.5rem;
-  bottom: 85px;
-}
-
-#figcaption1,
-#figcaption2 {
-  position: relative;
-  bottom: 40px;
 }
 
 .col + .col {
@@ -292,8 +325,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 1 + 0%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs2 {
@@ -301,8 +333,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 2 + 3%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs3 {
@@ -310,8 +341,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 3 + 6%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs4 {
@@ -319,8 +349,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 4 + 9%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs5 {
@@ -328,8 +357,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 5 + 12%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs6 {
@@ -337,8 +365,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 6 + 15%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs7 {
@@ -346,8 +373,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 7 + 18%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs8 {
@@ -355,8 +381,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 8 + 21%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs9 {
@@ -364,8 +389,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 9 + 24%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs10 {
@@ -373,8 +397,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 10 + 27%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs11 {
@@ -382,8 +405,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 11 + 30%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 .xs12 {
@@ -391,8 +413,7 @@ figcaption {
   flex-shrink: 0;
   justify-content: flex-start;
   flex-basis: calc((90% - 2px - 33%) / 12 * 12 + 33%);
-  border-width: 1px;
-  border-style: outset;
+  box-shadow: 5px 5px 10px 2px grey;
 }
 
 @media screen and (min-width: 475px) {
@@ -535,13 +556,24 @@ figcaption {
     order: -2;
   }
   #div-webDev {
-    border-width: 1px;
-    border-style: outset;
+    box-shadow: 5px 5px 10px 2px grey;
     height: 70px;
     position: absolute;
     top: 1650px;
     width: 98%;
     background-color: white;
+  }
+  header #image-container {
+    width: 100%;
+    transform: rotate(0deg);
+    position: relative;
+    bottom: 30px;
+  }
+  header #image-container #image-logo {
+    transform: rotate(0deg);
+    width: 39%;
+    position: relative;
+    margin-left: 60%;
   }
 }
 @media screen and (min-width: 658px) {
@@ -686,6 +718,12 @@ figcaption {
   #div-webDev {
     display: none;
   }
+  header #image-container #image-logo {
+    transform: rotate(0deg);
+    width: 27%;
+    position: relative;
+    margin-left: 72%;
+  }
 }
 @media screen and (min-width: 762px) {
   .off1 {
@@ -825,6 +863,12 @@ figcaption {
   }
   .col:nth-of-type(11) {
     order: -2;
+  }
+  header #image-container #image-logo {
+    transform: rotate(0deg);
+    width: 23%;
+    position: relative;
+    margin-left: 76%;
   }
 }
 @media screen and (min-width: 810px) {
@@ -1296,6 +1340,12 @@ figcaption {
   .col:nth-of-type(11) {
     order: -2;
   }
+  header #image-container #image-logo {
+    transform: rotate(0deg);
+    width: 22%;
+    position: relative;
+    margin-left: 77%;
+  }
   /*.rowEl
   {
       @include rowEl();
@@ -1306,4 +1356,97 @@ figcaption {
   {
       @include annuleRow();
   }*/
-}/*# sourceMappingURL=projet.css.map */
+}
+.col h4, .col .trait-noir, .col .ul-info, .col p {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.col p {
+  text-align: justify;
+}
+.col h4 {
+  margin-top: 30%;
+  font-size: 1.5rem;
+}
+
+.col:nth-of-type(2) {
+  transform: rotate(-1deg);
+}
+
+.col:nth-of-type(3) {
+  transform: rotate(1deg);
+}
+
+.col:nth-of-type(5) {
+  transform: rotate(-1deg);
+}
+
+.col:nth-of-type(6) {
+  transform: rotate(1deg);
+}
+
+.col:nth-of-type(7) {
+  transform: rotate(-1deg);
+}
+
+.col:nth-of-type(8) {
+  transform: rotate(1deg);
+}
+
+.col:nth-of-type(9) {
+  transform: rotate(-1deg);
+}
+
+.col:nth-of-type(10) {
+  transform: rotate(1deg);
+}
+
+.col:nth-of-type(11) {
+  transform: rotate(-1deg);
+}
+
+.col:nth-of-type(12) {
+  transform: rotate(1deg);
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+button img {
+  width: 20px;
+  height: 20px;
+}
+
+#button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10%;
+}
+
+.images {
+  position: relative;
+}
+.images figure {
+  position: absolute;
+  z-index: 1;
+}
+.images div {
+  padding-left: 3%;
+  padding-top: 3%;
+  position: absolute;
+  z-index: 2;
+}
+.images div span {
+  font-family: "LondrinaSolid-Black";
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+/*# sourceMappingURL=projet.css.map */
