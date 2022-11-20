@@ -9,11 +9,15 @@ $TotalNBColumnsXs : 2; //<450px*/
 $TotalNBColumns: 12;
 $BorderWidth : 1px;
 $BorderStyle : outset;
-
+$BorderShadow: 5px 5px 10px 2px grey;
 
 html {
     margin: 0;
     padding: 0;
+}
+
+body{
+    margin-bottom: 5%;
 }
 
 @font-face {
@@ -44,8 +48,9 @@ html {
 }
 
 #div-webDev {
-    border-width: $BorderWidth;
-    border-style: $BorderStyle;
+    // border-width: $BorderWidth;
+    // border-style: $BorderStyle;
+    
     height: 70px;
     position: absolute;
     top: 1150px;
@@ -69,8 +74,9 @@ html {
 }
 
 header {
-    border-width: $BorderWidth;
-    border-style: $BorderStyle;
+    // border-width: $BorderWidth;
+    // border-style: $BorderStyle;
+    box-shadow: $BorderShadow;
     width: 98%;
 
     h1 {
@@ -129,7 +135,7 @@ div p {
 
 #div-nav {
     border-style: none;
-
+    box-shadow: none;
 }
 
 nav a {
@@ -180,7 +186,7 @@ div figure {
     background-position: 0 50%;
     padding: 3px 0 3px 20px;
     margin: .4em 0;
-
+    text-decoration: underline;
 }
 
 .li-date {
@@ -197,23 +203,6 @@ h4 {
     color: orange;
 }
 
-figcaption {
-    position: relative;
-    font-family: 'LondrinaSolid-Black';
-    color: lightgray;
-    font-weight: bold;
-    font-size: 0.5rem;
-    bottom: 85px;
-
-
-}
-
-#figcaption1,
-#figcaption2 {
-    position: relative;
-    bottom: 40px;
-
-}
 
 .col+.col {
     margin-left: $gutter;
@@ -234,8 +223,9 @@ figcaption {
     .xs#{$i} {
         @include grid();
         @include dimension($i, $TotalNBColumns);
-        border-width: $BorderWidth;
-        border-style: $BorderStyle;
+        // border-width: $BorderWidth;
+        // border-style: $BorderStyle;
+        box-shadow: $BorderShadow;
     }
 }
 
@@ -296,8 +286,9 @@ figcaption {
 
 
     #div-webDev {
-        border-width: $BorderWidth;
-        border-style: $BorderStyle;
+        // border-width: $BorderWidth;
+        // border-style: $BorderStyle;
+        box-shadow: $BorderShadow;
         height: 70px;
         position: absolute;
         top: 1650px;
@@ -499,7 +490,105 @@ figcaption {
     {
         @include annuleRow();
     }*/
-
-
-
 }
+
+.col {
+    h4, .trait-noir, .ul-info, p {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    h4 {
+        margin-top: 30%;
+        font-size: 1.5rem;
+    }
+}
+
+.col:nth-of-type(2) {
+    transform: rotate(-1deg);
+}
+
+.col:nth-of-type(3) {
+    transform: rotate(1deg);
+}
+
+.col:nth-of-type(5) {
+    transform: rotate(-1deg);
+}
+
+.col:nth-of-type(6) {
+    transform: rotate(1deg);
+}
+
+.col:nth-of-type(7) {
+    transform: rotate(-1deg);
+}
+
+.col:nth-of-type(8) {
+    transform: rotate(1deg);
+}
+
+.col:nth-of-type(9) {
+    transform: rotate(-1deg);
+}
+
+.col:nth-of-type(10) {
+    transform: rotate(1deg);
+}
+
+.col:nth-of-type(11) {
+    transform: rotate(-1deg);
+}
+
+.col:nth-of-type(12) {
+    transform: rotate(1deg);
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+#button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+.images {
+    position: relative;
+
+    figure{
+        position: absolute;
+        z-index: 1;
+    }
+
+    div{
+        padding-left: 3%;
+        padding-top: 3%;
+        position: absolute;
+        z-index: 2;
+
+        span {
+            font-family: 'LondrinaSolid-Black';
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            text-shadow: 1px 1px 2px black;
+        }
+    }
+}
+
