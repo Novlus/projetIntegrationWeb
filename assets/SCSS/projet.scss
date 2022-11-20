@@ -96,6 +96,7 @@ header {
         }
     }
 
+
     p {
         color: gray;
         padding-bottom: 35px;
@@ -185,6 +186,52 @@ div figure {
 
 .li-date {
     background-image: url('../Images/calendar2.png');
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 3px 0 3px 20px;
+    margin: .4em 0;
+}
+
+
+.li-loupe {
+    background-image: url('../Images/loupe2.png');
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 3px 0 3px 20px;
+    margin: .4em 0;
+}
+
+.li-categorie {
+    background-image: url('../Images/categorie2.png');
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 3px 0 3px 20px;
+    margin: .4em 0;
+}
+
+.li-author2 {
+    background-image: url('../Images/author4.png');
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 3px 0 3px 20px;
+    margin: .4em 0;
+}
+
+.li-about {
+    background-image: url('../Images/about2.png');
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 3px 0 3px 20px;
+    margin: .4em 0;
+}
+
+.li-postIt {
+    background-image: url('../Images/postIt2.png');
     image-rendering: auto;
     background-repeat: no-repeat;
     background-position: 0 50%;
@@ -306,6 +353,26 @@ figcaption {
     }
 
 
+    header {
+
+        #image-container {
+            width: 100%;
+            transform: rotate(0deg);
+            position: relative;
+            bottom: 30px;
+
+            //position: relative;
+            //right: 1%
+            #image-logo {
+                transform: rotate(0deg);
+                width: 39%;
+                position: relative;
+                margin-left: 60%;
+            }
+        }
+    }
+
+
 
 }
 
@@ -368,6 +435,19 @@ figcaption {
         display: none;
     }
 
+    header {
+
+        #image-container {
+
+            #image-logo {
+                transform: rotate(0deg);
+                width: 27%;
+                position: relative;
+                margin-left: 72%;
+            }
+        }
+    }
+
 }
 
 
@@ -424,6 +504,19 @@ figcaption {
 
     .col:nth-of-type(11) {
         order: -2;
+    }
+
+    header {
+
+        #image-container {
+
+            #image-logo {
+                transform: rotate(0deg);
+                width: 23%;
+                position: relative;
+                margin-left: 76%;
+            }
+        }
     }
 
 
@@ -483,6 +576,19 @@ figcaption {
 
         .col:nth-of-type(11) {
             order: -2;
+        }
+    }
+
+    header {
+
+        #image-container {
+
+            #image-logo {
+                transform: rotate(0deg);
+                width: 22%;
+                position: relative;
+                margin-left: 77%;
+            }
         }
     }
 
